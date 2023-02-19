@@ -22,13 +22,13 @@ mailchimp.setConfig({
 
 
     app.post("/", function (req,res) {
-        //*****************************CHANGE THIS ACCORDING TO THE VALUES YOU HAVE ENTERED IN THE INPUT ATTRIBUTE IN HTML******************************
+        
         const firstName = req.body.firstName;
         const lastName = req.body.lastName;
         const email = req.body.emailAddress;
-        //*****************************ENTER YOU LIST ID HERE******************************
+        
         const listId = "f1702a0af2";
-        //Creating an object with the users data
+     
         const subscribingUser = {
          firstName: firstName,
          lastName: lastName,
@@ -56,8 +56,8 @@ mailchimp.setConfig({
         );
         console.log(res.statusCode);
         }
-        //Running the function and catching the errors (if any)
-        // ************************THIS IS THE CODE THAT NEEDS TO BE ADDED FOR THE NEXT LECTURE*************************
+        
+        
         // So the catch statement is executed when there is an error so if anything goes wrong the code in the catch code is executed. In the catch block we're sending back the failure page. This means if anything goes wrong send the faliure page
         run().catch(e => res.sendFile(__dirname + "/failure.html"));
         });
