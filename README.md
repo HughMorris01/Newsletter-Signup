@@ -1,7 +1,6 @@
 # Newsletter-Signup
 
-This is a web application built along with Udemys Full Web Developer Course. 
-It's built using Node.js and utilizes Mailchimp's API to add contacts to an email list. The live application is hosted on Glitch located at:
+This is a web application built using Node.js and utilizes Mailchimp's API to add contacts to an email list. The live application is hosted on Glitch located at:
 
 https://gregs-mailing-list.glitch.me
 
